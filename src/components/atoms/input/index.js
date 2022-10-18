@@ -12,6 +12,9 @@ const InputDefault = styled(AntInput)`
     ${props => theme.inputCommon} ;
 `;
 
+
+
+
 export const Input = ({ ...props }) => {
     const input = (
         <InputDefault {...props} placeholder={props.holder}/>
