@@ -24,13 +24,13 @@ test('테이블 렌더링', async () => {
   };
   AccessControlService.getPermissions.mockResolvedValue(resp);
 
+  // https://reactrouter.com/en/main/routers/create-memory-router
   const routes = [
     {
       path: '/access-control/permissions',
       element: <PermissionList/>,
     },
   ];
-
   const router = createMemoryRouter(routes, {
     initialEntries: ['/', '/access-control/permissions'],
     initialIndex: 1,
